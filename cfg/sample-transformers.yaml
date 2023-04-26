@@ -1,0 +1,26 @@
+# sample configurations used in inferring w/ ckpts from hugging face
+
+
+# FILEPATHS
+
+src_filepath: <your-input-json-filepath>
+out_filepath: <your-output-pickle-filepath-with-one-curlybrackets-to-insert-annotation>
+
+
+# MODEL CHOICES
+
+# type of models
+#     choices: "transformers", "sentence-transformers", "open-ai-llm"
+model: 
+  # # uncomment the following section to use "transformers"
+  # type: transformers
+  # # init specifications used for inferer instance building
+  # configs:
+  #   tokenizer: sentence-transformers/all-MiniLM-L6-v2
+  #   model: sentence-transformers/all-MiniLM-L6-v2
+
+  # uncomment the following section to use "sentence-transformers"
+  type: sentence-transformers
+  # init specifications used for inferer instance building
+  configs:
+    model: sentence-transformers/all-MiniLM-L6-v2
