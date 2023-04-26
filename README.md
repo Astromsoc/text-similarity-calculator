@@ -23,7 +23,7 @@ Current codes only accept the following format of input files:
 - file format: `json`
 - content format:
 
-    ```json
+    ```text
     [{
         'case_id': str,
         'sentence1': str,
@@ -43,7 +43,6 @@ python3 -m src.compute \
         -c <config_filepath_here>
 ```
 
-
 #### Plotting
 
 With the generated pickle file from last step, it's possible to plot the similarity matrix by running:
@@ -52,6 +51,16 @@ With the generated pickle file from last step, it's possible to plot the similar
 python3 -m src.plot \
         -s <pickle_filepath_here>
 ```
+
+Sample plots are here for sample display:
+
+- average cosine similarity matrix
+
+    ![sample-avg-plot](plt/sample-avg-plot.png)
+
+- singular cosine similarity matrices
+
+    ![sample-unit-plots](plt/sample-unit-plots.png)
 
 ## Repo Structure
 
